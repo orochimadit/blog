@@ -13,7 +13,8 @@
 
 Route::get('/', [
     'uses'=> 'BlogController@index',
+    'as'    =>'blog'
 ]);
-Route::get('/blog', function () {
+Route::get('/waw', function () {
     return view('blog.show');
 });
